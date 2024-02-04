@@ -1,9 +1,37 @@
+.nav-footer {
+  width: 35%;
+}
+.nav-footer li {
+  font-size: 13px;
+}
+.active-nav {
+  position: relative;
+  white-space: nowrap;
+}
+.active-nav::after {
+  content: "";
+  position: absolute;
+  background-color: #7000ff;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.3s linear;
+}
 .menu {
   background-color: #d4d5fc;
   height: 2.5rem;
 }
 .menu img {
   width: 1.7rem;
+}
+
+.logo2 {
+  width: 1.5rem;
+}
+
+.navbar ul {
+  list-style: none;
 }
 
 /* header */
@@ -28,12 +56,16 @@
   border: var(--bs-border-width) solid var(--bs-border-color) !important;
 }
 
-.item-4, .item-5, .item-6 {
+.item-4,
+.item-5,
+.item-6 {
   padding: 0.5rem 0.6rem;
   transition: all 0.2s linear;
 }
 
-.item-4:hover, .item-5:hover, .item-6:hover {
+.item-4:hover,
+.item-5:hover,
+.item-6:hover {
   background: #e6e8ed;
 }
 
@@ -49,23 +81,50 @@
 }
 
 .sm-search {
-  background-color: #EDEFF2 !important;
+  background-color: #edeff2 !important;
 }
 
 .sm-search:focus {
   border: 0 !important;
 }
 
+.nav-sm {
+  display: none;
+}
+
+.nav-text {
+  position: relative;
+}
+
+.nav-text-sm {
+  color: #8b8e99;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-icon-sm {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.nav-bar-sm {
+  justify-content: space-around;
+}
+.nav-footer-container {
+  display: none;
+}
 @media only screen and (max-width: 1250px) {
   .action-button__label {
+    display: none;
+  }
+  .nav-md-text {
     display: none;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .search-input-div {
-    width: 25rem;  
-  } 
+    width: 25rem;
+  }
 
   .header-md {
     display: none;
@@ -73,5 +132,39 @@
   .header-sm {
     display: flex;
     flex-direction: column;
+  }
+  .navbar {
+    display: none !important;
+  }
+  .nav-sm {
+    display: block;
+    height: 5rem;
+    width: 100%;
+  }
+  .nav-sm ul {
+    list-style: none;
+  }
+  .nav-footer-container {
+    display: block;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .nav-icon-sm {
+    width: 2rem;
+    height: 2rem;
+  }
+  .nav-bar-sm {
+    justify-content: space-between;
+  }
+  .nav-text-sm {
+    font-size: 12px;
+  }
+  .nav-footer {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .nav-footer {
+    width: 80%;
   }
 }

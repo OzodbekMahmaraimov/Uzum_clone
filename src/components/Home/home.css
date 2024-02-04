@@ -19,6 +19,9 @@
 .fw-600 {
   font-weight: 600;
 }
+.fs-13 {
+  font-size: 13px;
+}
 .fs-16 {
   font-size: 16px;
 }
@@ -28,12 +31,41 @@
 .text-blue {
   color: #7000ff;
 }
+.text-dark {
+  color: #000000;
+}
 .bg-blue {
   background-color: #7000ff;
+}
+.nav-text {
+  color: #AAABA9;
+  transition: all 0.3s linear;
+}
+.nav-text::after {
+  content: "";
+  position: absolute;
+  background-color: #1F2026;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s linear;
+}
+.nav-text:hover {
+  color: #1F2026;
+}
+.nav-text:hover::after {
+  width: 100%;
 }
 .line {
   white-space: nowrap;
 }
 .pointer {
     cursor: pointer;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.list-none {
+  list-style: none;
 }
