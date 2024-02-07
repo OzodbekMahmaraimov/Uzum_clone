@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './images/uzum-logo.png';
 import logo2 from './images/logo.svg';
 import navImg1 from './images/nav-img.png';
@@ -7,8 +7,20 @@ import menu from './images/menu.jpg';
 import './navbar.css';
 import { Input, InputGroup, InputGroupText } from 'reactstrap';
 import { IoSearch } from "react-icons/io5";
+import YanaLoyiha from './YanaLoyiha';
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const yanaOpen = () => {
+    setOpen(!open)
+    if(open) {
+      document.querySelector(".yana-container").style.display = "none";
+    } else {
+      document.querySelector(".yana-container").style.display = "block";
+    }
+  }
+
   return (
     <>
       <nav className='nav-bar'>
@@ -74,8 +86,8 @@ const Navbar = () => {
             </InputGroup>
           </div>
         </div>
-        <div className="navbar">
-          <ul className='d-flex align-items-center justify-content-around flex-row w-100'>
+        <div className="navbar ps-0">
+          <ul className='ps-0 d-flex align-items-center justify-content-around flex-row w-100'>
             <li className='d-flex align-items-center gap-2'>
               <img className='logo2' src={navImg1} alt="..." />
               <p className='my-auto fs-13 fw-600 text-dark'>Muddatli to'lov</p>
@@ -108,7 +120,7 @@ const Navbar = () => {
             <li className='fs-14 pointer fw-400 nav-text nav-md-text'>
               Uy-roʻzgʻor buyumlari
             </li>
-            <li className='fs-14 pointer fw-400 nav-text'>
+            <li onClick={yanaOpen} className='fs-14 pointer fw-400 nav-text'>
               Yana
               <svg data-v-698cad85="" width="16" height="16" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
                 <path d="M12 16C12.3107 15.9911 12.5948 15.8748 12.8257 15.6243L18.4481 9.8071C18.6435 9.61029 18.75 9.3598 18.75 9.06458C18.75 8.47414 18.2883 8 17.7024 8C17.4183 8 17.143 8.1163 16.9388 8.32206L12.0089 13.4504L7.06116 8.32206C6.85696 8.12524 6.59061 8 6.29763 8C5.71167 8 5.25 8.47414 5.25 9.06458C5.25 9.3598 5.35654 9.61029 5.55186 9.8071L11.1832 15.6243C11.4229 15.8748 11.6893 16 12 16Z"></path>
@@ -117,7 +129,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      
+      <YanaLoyiha sinf="yana-container" />
     </>
   )
 }

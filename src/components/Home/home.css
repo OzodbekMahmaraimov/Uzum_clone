@@ -69,3 +69,7 @@
 .list-none {
   list-style: none;
 }
+/* Yana */
+.yana-container {
+  position: absolute;
+}
