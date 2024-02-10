@@ -14,7 +14,7 @@
   font-size: 11px;
 }
 .spacin-06 {
-  letter-spacing: .006em;
+  letter-spacing: 0.006em;
 }
 .fw-600 {
   font-weight: 600;
@@ -38,13 +38,13 @@
   background-color: #7000ff;
 }
 .nav-text {
-  color: #AAABA9;
+  color: #aaaba9;
   transition: all 0.3s linear;
 }
 .nav-text::after {
   content: "";
   position: absolute;
-  background-color: #1F2026;
+  background-color: #1f2026;
   height: 3px;
   width: 0;
   left: 0;
@@ -52,7 +52,7 @@
   transition: all 0.3s linear;
 }
 .nav-text:hover {
-  color: #1F2026;
+  color: #1f2026;
 }
 .nav-text:hover::after {
   width: 100%;
@@ -61,7 +61,7 @@
   white-space: nowrap;
 }
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 .fw-500 {
   font-weight: 500;
@@ -72,4 +72,7 @@
 /* Yana */
 .yana-container {
   position: absolute;
+}
+.action-button__label {
+  text-decoration: none !important;
 }
