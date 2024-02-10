@@ -2,9 +2,7 @@ import React from 'react'
 
 const Saralangan = () => {
   return (
-    <div>
-        Asilbek
-    </div>
+    <div>Asilbek</div>
   )
 }
 
