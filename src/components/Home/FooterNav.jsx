@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
+import './home.css'
 
 const FooterNav = () => {
     const [activeNavItem, setActiveNavItem] = useState('cheap-prices');
@@ -14,21 +15,21 @@ const FooterNav = () => {
                 <li
                     id='cheap-prices'
                     onClick={() => recommend('cheap-prices')}
-                    className={activeNavItem === 'cheap-prices' ? 'active-nav' : ''}
+                    className={`${activeNavItem === 'cheap-prices' ? 'active-nav' : ''} pointer`}
                 >
                     Arzon narxlar
                 </li>
                 <li
                     id='recommendations'
                     onClick={() => recommend('recommendations')}
-                    className={activeNavItem === 'recommendations' ? 'active-nav' : ''}
+                    className={`${activeNavItem === 'recommendations' ? 'active-nav' : ''} pointer`}
                 >
                     Tavsiyalar
                 </li>
                 <li
                     id='new'
                     onClick={() => recommend('new')}
-                    className={activeNavItem === 'new' ? 'active-nav' : ''}
+                    className={`${activeNavItem === 'new' ? 'active-nav' : ''} pointer`}
                 >
                     Yangi
                 </li>

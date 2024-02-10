@@ -4,6 +4,7 @@ import './home.css'
 import HomeCarousel from './Carousel'
 import Navsm from './Navsm'
 import FooterNav from './FooterNav'
+import Buyumlar from '../buyumlar/Buyumlar'
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       </div>
       <FooterNav />
       <Navsm />
+      <Buyumlar />
     </>
   )
 }
