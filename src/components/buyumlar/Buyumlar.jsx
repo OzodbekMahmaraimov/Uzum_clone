@@ -6,7 +6,7 @@ import card from './card.json'
 const Buyumlar = () => {
   return (
     < >
-      <div className='card-container d-grid justify-content-center'>
+      <div className='card-container container d-grid justify-content-center'>
 
         {card.map((post) => {
           return (
@@ -61,7 +61,7 @@ const Buyumlar = () => {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ...
+
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

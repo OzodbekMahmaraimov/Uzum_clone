@@ -64,8 +64,6 @@
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    max-width: 1300px;
-    margin:  auto;
     justify-content: center;    
 }
 @media (max-width: 5000px) {
