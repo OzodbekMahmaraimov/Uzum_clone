@@ -6,7 +6,7 @@ import Nav from './nav.json';
 const Navsm = () => {
     return (
         <>
-            <nav className='nav-sm position-fixed bottom-0 left-0 z-3 border-top border-2 pt-3'>
+            <nav className='nav-sm position-fixed bottom-0 left-0 z-3 border-top border-2 pt-3 nav-sm-footer'>
                 <ul className='d-flex nav-bar-sm align-items-center pointer ps-0'>
                     {Nav.map((navs) => {
                         return (
