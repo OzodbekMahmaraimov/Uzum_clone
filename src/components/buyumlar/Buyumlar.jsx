@@ -6,15 +6,15 @@ import card from './card.json'
 const Buyumlar = () => {
   return (
     < >
-      <div className='card-container container d-grid justify-content-center'>
-
+       <h2 className='mt-3 container'>Arzon naxrlar </h2>
+      <div className='card-container container d-grid mx-auto'>
         {card.map((post) => {
           return (
-            <div className='mt-5 mx-auto box ms-2'>
-              <div className='mx-auto'
+            <div className='mt-5  box ms-2'>
+              <div className=''
                 style={{
                   width: '16rem'
-
+                  
                 }}
               >
                 <img

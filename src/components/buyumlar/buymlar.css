@@ -19,10 +19,8 @@
 }
 
 .box p {
-
     font-size: 12px;
     font-weight: 450;
-
 }
 
 .rasm {
@@ -39,7 +37,6 @@
     border-radius: 5px;
     width: max-content;
     font-size: 12px;
-    margin-top: -12px;
 }
 
 .box2 del {
@@ -63,8 +60,7 @@
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;    
+    grid-template-columns: repeat(4, 1fr);  
 }
 @media (max-width: 5000px) {
     .card-container {
@@ -85,11 +81,5 @@
 @media (max-width: 756px) {
     .card-container {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 370px) {
-    .card-container {
-        margin: auto;
-        grid-template-columns: repeat(1, 1fr);
     }
 }
