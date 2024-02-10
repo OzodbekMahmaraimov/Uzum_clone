@@ -6,7 +6,8 @@ import './saralangan.css'
 
 const Saralangan = () => {
   return (
-    <div className='container mt-4'>
+    <>
+      <div className='container mt-4'>
         <Navbar />
         <hr className='p-0 m-0' />
         <div className=' d-flex like-container gap-2'>
@@ -16,7 +17,8 @@ const Saralangan = () => {
           <button>Akkauntga kirish</button>
         </div>
         <Navsm />
-    </div>
+      </div>
+    </>
   )
 }
 
