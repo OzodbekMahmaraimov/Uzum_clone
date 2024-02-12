@@ -1,12 +1,11 @@
 .car-img {
     width: 100%;
     height:550px;
-    /* display: inline; */
+ 
 }
 .carousell {
     width: 35%;
     left: 70px;
-    /* position: fixed; */
     height: 550px;
 }
 
@@ -56,24 +55,11 @@
     top: 100px;
     overflow: scroll;
     overflow-x: hidden;
+    scrollbar-width: 20;
+    scrollbar-color: #ffffff #ffffff;
    
 }
-/* 
-::-webkit-scrollbar {
-    width: 12px;
-}
 
-::-webkit-scrollbar-track {
-    background-color: #ffffff;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #ffffff;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #ffffff;
-} */
 .Techno-spark{
     position: absolute;
     left: 50px;
@@ -188,7 +174,7 @@
 
 .mudat{
     position: absolute;
-    top: 1px;
+    top: 12px;
     color: black;
     font-size: 14px;
     left: 17.5em;
@@ -196,7 +182,50 @@
 
 .qoshish{
     position: absolute;
-    top: 45em;
-    width: 200px;
+    top: 36em;
+    width: 250px;
     height: 50px;
+    left: 1em;
+    background-color: blueviolet;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    border: none;
 }
+
+
+.qoshish1{
+    position: absolute;
+    top: 48em;
+    width: 250px;
+    height: 50px;
+    left: 20em;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    color: blueviolet;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+}
+
+.savatcha{
+    position: absolute;
+    top: 50em;
+    left: 1em;
+    width:450px;
+    height: 40px;
+    border: none;
+    background-color: rgb(237, 221, 192);
+}
+
+.savatchalar{
+    position: absolute;
+    right: 25em;
+    width: 20px;
+}
+/* 
+@media only screen and (max-width: 992px){
+    .carousell{
+        position: absolute;
+        left: 55em;
+    }
+} */

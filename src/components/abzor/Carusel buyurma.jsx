@@ -5,13 +5,14 @@ import Honor1 from './Image/Honor1.jpg'
 import Honor2 from './Image/Honor2.jpg'
 import Honor3 from './Image/Honor3.jpg'
 import Honor4 from './Image/Honor4.jpg'
+import  savat from './Image/savat.png'
 import './abzor.css'
 import { Button } from 'reactstrap';
 
 const CaruselBuyurtma = () => {
 
-    const [count, setCount] = useState(0);
-    const [pul, setPul] = useState("5000")
+    const [count, setCount] = useState(1);
+    const [pul, setPul] = useState("10000")
 
     const increment = () => {
       setCount(prevCount => prevCount + 1);
@@ -25,7 +26,6 @@ const CaruselBuyurtma = () => {
 
     return (
       <>
-
         <div className="container">
           <div className='Fixied'>
             <Carousel className='carousell'>
@@ -79,8 +79,10 @@ const CaruselBuyurtma = () => {
             <h4>{pul}so'm</h4>
             </div>
             <div className='savat'>
-                <button  className='savat111'><h6 className='savat3'>Oyiga 143 880 so`mdan</h6><p className='mudat'>muddatli to`lov</p></button>
-            <Button color='primary' className='qoshish'>Savatga Qo`shish</Button>
+                <button  className='savat111'><h6 className='savat3'>Oyiga 143 880 so`mdan</h6><p className='mudat'>muddatli to`lov</p> </button>
+            <button color='primary' className='qoshish'>Savatga Qo`shish</button>
+            <button color='primary' className='qoshish1'>Tugmani 1 bosishda xarid qiling</button>
+            <button className='savatcha'><  img className='savatchalar' src={savat} alt="..." />Bu haftada 28 kishi sotib oldi</button>
             </div>
 
           </div>
